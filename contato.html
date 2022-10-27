@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <div id="links-fixos" class="hidden-md-down"></div>
+    <div>
+      <nav class="menu">
+        <h2 class="logo">
+          <a name="tec"> Tecnos<span>ciente</span> </a>
+        </h2>
+        <a onclick="Home()" href="#" class="btn">Home</a>
+      </nav>
+      <div class="contact">
+        <div id="contato"><h4></h4></div>
+        <h1 class="smoth-animation">Entre em contato!</h1>
+        <form class="c smoth-animation" id="inform">
+          <h4>Email:</h4>
+            <input
+              type="email"
+              class="mail_2"
+              id="limpa"
+              placeholder="Digite seu email:"
+            />
+            <h4>Nome:</h4>
+            <input
+              type="text"
+              class="nome"
+              id="limpa_2"
+              placeholder="Digite seu nome:"
+            />
+            <h4>Assunto:</h4>
+            <input
+              type="text"
+              class="assunto"
+              id="limpa_3"
+              placeholder="Digite o Assunto desejado:"
+            /><div class="botao"><button
+          class="button_c"
+            type="button"
+            name="submit"
+            onclick="enviar(), escreve()"
+          >
+            Enviar
+          </button></div>
+          <div id="msg"></div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function Home() {
+        window.location.href = "index.html";
+      }
+      function escreve() {
+        document.querySelector("#msg").innerHTML =
+          "<h3>Obrigado por entrar em contato, retornaremos em breve!</h3>";
+      }
+      function enviar() {
+        document.getElementById("inform").reset()
+      }
+    </script>
+  </body>
+</html>

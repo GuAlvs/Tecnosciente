@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Descarte correto de lixo eletrónico</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="links-fixos" class="hidden-md-down">
+    </div>
+    <div class="hero">
+      <nav class="menu">
+        <h2 class="logo">
+          <a name="tec"> Tecnos<span>ciente</span> </a>
+        </h2>
+        <ul>
+          <li><a href="#" name="home">Home</a></li>
+          <li><a href="#somos">Quem somos</a></li>
+          <li><a href="#serviço">Serviços</a></li>
+        </ul>
+        <a onclick="contato()" href="#" class="btn">Entre em contato</a>
+      </nav>
+
+      <div class="content">
+        <h4 class="smoth-animation">Olá, somos a</h4>
+        <h1 class="smoth-animation">TECNOS<span>CIENTE</span></h1>
+        <h3 class="smoth-animation">
+          Gerenciamento de descarte de lixo eletrónico
+        </h3>
+        <div class="newslatter smoth-animation">
+          <h3>Não se localiza na nossa cidade? Mande um email!</h3>
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Digite seu email"
+            />
+            <button type="button" name="submit" onclick="escreve()">
+              Enviar
+            </button>
+            <div id="msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <a name="somos"></a>
+    <section class="about">
+      <div class="main">
+        <img src="img/2.jpg" />
+        <div class="about-text">
+          <h2>Quem Somos</h2>
+
+          <p>
+            Somos a TecnoCiente, uma empresa que atua no gerenciamento, coleta e
+            reciclagem de lixo eletrônico. Temos sede em Barueri-SP, e surgimos
+            em 2020, quando a pandemia do Covid-19 fez necessário o
+            distanciamento social no Brasil e no mundo. Podemos citar que muitas
+            empresas adotaram o home-office para manterem o funcionamento de
+            suas atividades, além dos métodos de ensino online que foram
+            estabelecidos por diversas instituições. Diante disso, o isolamento
+            permitiu o avanço da tecnologia, e consequentemente o aumento na
+            produção de resíduos eletrônicos. Temos como objetivo reaproveitar
+            esses materiais. Realizamos coleta, testes, separação, e
+            armazenamento. Após esse processo, o lixo eletrônico é destinado de
+            maneira correta, onde serão reciclados ou servirão de matéria prima
+            para novos produtos. Deste modo, oferecemos serviços de qualidade
+            para ajudar a proteger o planeta e conscientizar a população sobre
+            os impactos que podem ser gerados no meio ambiente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <a name="serviço"></a>
+    <div class="service">
+      <div class="title">
+        <h2>COMO FUNCIONA</h2>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Primeiro contato</h5>
+          <div class="pra">
+            <p>
+              Já possui os lixos eletrônicos separados? Então basta entrar em
+              contato conosco para agendar o dia e o horário da coleta. Se você
+              é empresa, escola e condomínio ou até mesmo pessoa física,
+              fornecemos coletores e materiais explicativos para deixar no local
+              cadastrado
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h5>Coleta</h5>
+          <div class="pra">
+            <p>
+              A Coleta: após o agendamento, nossa equipe vai até o local
+              combinado e faz a retirada dos lixos eletrônicos. Veículos
+              identificados e funcionários uniformizados.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-bell"></i>
+          <h5>Recibo da Coleta</h5>
+          <div class="pra">
+            <p>
+              No momento da retirada dos equipamentos, será fornecido um recibo
+              nominal e um relatório de descarte consciente. Contamos com
+              empresas certificadas pelo Ibama e pela Cetesb para o processo de
+              reciclagem e reutilização.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a onclick="contato()" href="#" class="btn" style="margin: 0 auto"
+        >Entre em contato</a
+      >
+    </div>
+
+    <div class="contact-me">
+      <p>Venha nos visitar e saber mais sobre o projeto!</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.7950690100097!2d-46.87203064893717!3d-23.467855484654503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0304bc1156d5%3A0x675d40c6a3089cc3!2sUNIP%20-%20Alphaville!5e0!3m2!1spt-BR!2sbr!4v1653398341307!5m2!1spt-BR!2sbr"
+        width="1400"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <footer>
+      <p class="end">Desenvolvido pela equipe do projeto Tecnosciente</p>
+    </footer>
+
+    <script>
+      function contato() {
+        window.location.href = "contato.html";
+      }
+
+      function escreve() {
+        var ref = document.querySelector("#mail")
+        var nome = ref.value = ""
+        document.querySelector("#msg").innerHTML =
+          "<h4>Obrigado por entrar em contato, retornaremos em breve!</h4>";
+      }
+    </script>
+  </body>
+</html>
